@@ -1,0 +1,137 @@
+ import java.util.Scanner;
+
+public class Corazon {
+
+    public static void main(String[] args) {
+        Scanner luis = new Scanner(System.in);
+        int contador = 17, l = 14, filas = 14;
+
+        for (int j = 4; j > 1; j--) {
+            contador--;
+            l--;
+            System.out.println();
+
+            for (int i = l; i > 1; i--) {
+                System.out.print("  ");
+            }
+
+            for (int i = contador; i > 1; i--) {
+                System.out.print("0");
+            }
+
+            /*
+             prueba para los espacios
+             */
+            for (int i = 1; i <= 12; i++) {
+                if (j == 4) {
+                    System.out.print("-");
+                }
+            }
+            /*
+             prueba para los espacios 2
+             */
+            for (int i = 1; i <= 5; i++) {
+                if (j == 3) {
+                    System.out.print("-");
+
+                }
+            }
+            for (int i = 1; i <= 3; i++) {
+                if (j == 3) {
+                    System.out.print("0");
+                }
+            }                 /*
+             prueba para los espacios 3
+             */
+
+            for (int i = 1; i <= 3; i++) {
+                if (j == 3) {
+                    System.out.print("-");
+
+                }
+            }
+
+            for (int i = 1; i <= 3; i++) {
+                if (j == 3) {
+                    System.out.print("0");
+                }
+            }
+
+            /*
+             prueba para los espacios 4
+             */
+            for (int i = 1; i <= 11; i++) {
+                if (j == 2) {
+                    System.out.print("-");
+
+                }
+            }
+
+            for (int i = 1; i <= 3; i++) {
+                if (j == 2) {
+                    System.out.print("0");
+                }
+            }/*
+             prueba para los espacios 5
+             */
+
+            for (int i = 1; i <= 7; i++) {
+                if (j <= 3) {
+                    System.out.print("-");
+
+                }
+            }
+
+            for (int i = contador; i > 1; i--) {
+                if (j > 2) {
+                    System.out.print("0");
+                }
+            }
+
+            for (int i = 1; i <= 4; i++) {
+                if (j == 2) {
+                    System.out.print("-");
+
+                }
+            }
+
+            for (int i = contador; i > 1; i--) {
+                if (j == 2) {
+                    System.out.print("0");
+                }
+            }
+
+        }
+
+        /*
+         Esta es la paete de abajo del corazon
+         */
+        int contador2 = 11, l2 = 9;
+
+        for (int j = 17; j > 1; j--) {
+            contador--;
+            l2++;
+            System.out.println();
+
+            for (int i = 1; i <= l2; i++) {
+                System.out.print("  ");
+            }
+
+            for (int i = contador; i > 1; i--) {
+                System.out.print("0");
+
+            }
+
+            for (int i = contador; i > 0; i--) {
+                System.out.print("--");
+
+            }
+            for (int i = contador; i > 1; i--) {
+                System.out.print("0");
+
+            }
+
+        }
+
+    }
+}
